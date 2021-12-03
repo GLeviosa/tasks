@@ -1,7 +1,9 @@
 from django.urls import path
 
-from . import views
+from .views import taskGet, taskPost, taskDelete
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('post', taskPost, name='post'),
+    path('get', taskGet, name='get'),
+    path('delete', taskDelete, name='delete'),
 ]

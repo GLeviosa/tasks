@@ -30,4 +30,4 @@ def taskPost(request):
 @api_view(["DELETE"])
 def taskDelete(request):
     Task.objects.all().delete()
-    return HttpResponse("Todas as Tasks foram deletadas")
+    return HttpResponse("ALL TASKS DELETED")
